@@ -44,6 +44,7 @@ popd
         private Dictionary<string, IPBlockCount> ipBlocker = new Dictionary<string, IPBlockCount>();
         private Dictionary<string, DateTime> ipBlockerDate = new Dictionary<string, DateTime>();
         private DateTime lastConfigFileDateTime = DateTime.MinValue;
+		private System.Timers.Timer timer;
 
         private void ExecuteBanScript()
         {
@@ -263,11 +264,14 @@ popd
             }
 
             string userName = null;
-            XmlNode userNameNode = doc.SelectSingleNode("//Data[@Name='TargetUserName']");
-            if (userNameNode != null)
-            {
-                userName = userNameNode.InnerText.Trim();
-            }
+			if (null != doc)
+			{
+				XmlNode userNameNode = doc.SelectSingleNode("//Data[@Name='TargetUserName']");
+				if (userNameNode != null)
+				{
+					userName = userNameNode.InnerText.Trim();
+				}
+			}
 
             if (config.IsWhiteListed(ipAddress))
             {
@@ -290,7 +294,7 @@ popd
                     // Increment the count.
                     ipBlockCount.IncrementCount();
 
-                    Log.Write(LogLevel.Info, "Incrementing count for ip {0} to {1}, user name: {2}", ipAddress, ipBlockCount.Count, userName);
+                    //Log.Write(LogLevel.Info, "Incrementing count for ip {0} to {1}, user name: {2}", ipAddress, ipBlockCount.Count, userName);
 
                     // check for the target user name for additional blacklisting checks                    
                     bool blackListed = config.IsBlackListed(ipAddress) || (userName != null && config.IsBlackListed(userName));
@@ -449,6 +453,8 @@ popd
             ProcessXml(xml8);
 
             TestRemoteDesktopAttemptWithPAddress("99.99.99.98", 10);
+			TestRemoteDesktopAttemptWithPAddress("99.99.99.95", 8);
+			TestRemoteDesktopAttemptWithPAddress("99.99.99.94", 4);
 
             // Fire this test event after a 15 second delay, to test ExpireTime duration.
             ThreadPool.QueueUserWorkItem(new WaitCallback(DelayTest), xml5);
@@ -467,14 +473,66 @@ popd
 
 #if DEBUG
 
-            RunTests();
-
+            //RunTests();
+			RunFreeswitchLogReader();
 #endif
 
-            SetupWatcher();
-            LogInitialConfig();
 
+			//SetFreeswitchLogReader();
+
+			//SetupWatcher();
+            LogInitialConfig();
         }
+
+		private void RunFreeswitchLogReader()
+		{
+			Log.Write(LogLevel.Info, "Start reading Freeswitch Log {0}", "");
+
+			Log.Write(LogLevel.Info, "Log file Path :: {0}", config.FreeswitchLogFilePath);
+			try
+			{
+				using (StreamReader reader = File.OpenText(config.FreeswitchLogFilePath))
+				{
+					string line;
+					Regex _lineSplitter = new Regex(".* \\[WARNING\\] sofia_reg.c.* (\\d+.\\d+.\\d+.\\d+)$", RegexOptions.Singleline);
+
+					while (reader.Peek() >= 0)
+					{
+						line = reader.ReadLine();
+						if (!_lineSplitter.IsMatch(line))
+						{
+							continue;
+						}
+						var f = _lineSplitter.Match(line);
+						line = f.Groups[1].ToString().Trim();
+						Log.Write(LogLevel.Info, "Processing IP :: {0}", line);
+						ProcessIPAddress(line, null);
+					}
+				}	
+			}
+			catch (Exception)
+			{
+			}
+										
+
+		}
+
+		private void SetFreeswitchLogReader()
+		{
+			RunFreeswitchLogReader();
+			timer = new System.Timers.Timer { Interval = 1000 * config.ReadFreeswitchLogTimeout };
+			timer.Elapsed += timer_Elapsed;
+			timer.AutoReset = true;
+			timer.Start();
+		}
+
+		private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+		{
+			RunFreeswitchLogReader();
+		}
+
+
+		
 
         private void CheckForExpiredIP()
         {
@@ -595,6 +653,7 @@ popd
         protected override void OnStop()
         {
             base.OnStop();
+			timer.Stop();
 
             run = false;
             query = null;
@@ -623,6 +682,10 @@ popd
         public static void RunConsole(string[] args)
         {
             IPBanService svc = new IPBanService();
+			svc.ReadAppSettings();
+			svc.RunFreeswitchLogReader();
+			svc.LogInitialConfig();
+			/*
             svc.OnStart(args);
             Console.WriteLine("Press ENTER to quit");
             string line;
@@ -635,6 +698,7 @@ popd
                 }
             }
             svc.OnStop();
+			 * */
         }
 
         public static void Main(string[] args)
@@ -650,7 +714,8 @@ popd
                 RunService(args);
             }
         }
-    }
+
+	}
 }
 
 

@@ -31,6 +31,8 @@ namespace IPBan
         private Regex blackListRegex;
         private readonly HashSet<string> allowedUserNames = new HashSet<string>();
         private bool banFileClearOnRestart;
+		private string freeswitchLogFilePath;
+		private int readFreeswitchLogTimeout;
 
         /// <summary>
         /// Checks whether a user name should be banned after a failed login attempt. Cases where this would happen would be if the config has specified an allowed list of user names.
@@ -121,6 +123,12 @@ namespace IPBan
             value = ConfigurationManager.AppSettings["RuleName"];
             ruleName = value;
 
+			value = ConfigurationManager.AppSettings["FreeswitchLogFilePath"];
+			freeswitchLogFilePath = value;
+
+			value = ConfigurationManager.AppSettings["ReadFreeswitchLogTimeout"];
+			readFreeswitchLogTimeout = int.Parse(value);
+
             PopulateList(whiteList, ref whiteListRegex, ConfigurationManager.AppSettings["Whitelist"], ConfigurationManager.AppSettings["WhitelistRegex"]);
             PopulateList(blackList, ref blackListRegex, ConfigurationManager.AppSettings["Blacklist"], ConfigurationManager.AppSettings["BlacklistRegex"]);
             Regex ignored = null;
@@ -199,6 +207,12 @@ namespace IPBan
         /// </summary>
         public string RuleName { get { return ruleName; } }
 
+		/// <summary>
+		/// Freeswitch Log File Path
+		/// </summary>
+		public string FreeswitchLogFilePath { get { return freeswitchLogFilePath; } }
+		public int ReadFreeswitchLogTimeout { get { return readFreeswitchLogTimeout; } }
+
         /// <summary>
         /// Expressions to block
         /// </summary>
@@ -233,5 +247,7 @@ namespace IPBan
         /// Allowed user names as a comma separated string
         /// </summary>
         public string AllowedUserNames { get { return string.Join(",", allowedUserNames); } }
-    }
+
+		
+	}
 }

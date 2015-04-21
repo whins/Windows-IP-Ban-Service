@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2 @3 Member=(Name=OnStart OverloadingParameters=[(@4 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Category="CodeSchema_Method" Bounds="441.750713740064,-95.8955954246763,76.6233333333335,25.96" CodeSchemaProperty_IsProtected="True" CommonLabel="OnStart" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" IsOverloaded="True" Label="OnStart" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=622 StartCharacterOffset=8 EndLineNumber=622 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="(@1 @2 @3 Member=(Name=RunConsole OverloadingParameters=[(@4 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Category="CodeSchema_Method" Bounds="763.769251002787,-28.1999177503011,99.3133333333333,25.96" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="RunConsole" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="RunConsole" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=674 StartCharacterOffset=8 EndLineNumber=674 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="(@1 @2 @3 Member=ExecuteBanScript)" Category="CodeSchema_Method" Bounds="390.218560009734,575.624404575324,126.423333333333,25.96" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="ExecuteBanScript" />
+    <Node Id="(@1 @2 @3 Member=RunTests)" Category="CodeSchema_Method" Bounds="143.388066061346,295.824404575324,83.5733333333333,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="RunTests" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="RunTests" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=431 StartCharacterOffset=8 EndLineNumber=431 EndCharacterOffset=8)" />
+    <Node Id="(@1 @2 Type=IPBanConfig Member=(Name=IsBlackListed OverloadingParameters=[(@4 Namespace=System Type=String)]))" Category="CodeSchema_Method" Bounds="546.641893343067,519.664404575324,102.746666666667,25.96" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="IsBlackListed" />
+    <Node Id="(@1 @2 Type=IPBanConfig Member=(Name=IsWhiteListed OverloadingParameters=[(@4 Namespace=System Type=String)]))" Category="CodeSchema_Method" Bounds="679.388560009734,463.704404575324,106.596666666667,25.96" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="IsWhiteListed" />
+    <Node Id="(@1 @2 Type=IPBanConfig Member=get_FailedLoginAttemptsBeforeBan)" Category="CodeSchema_Method" Bounds="815.985226676401,519.664404575324,221.826666666667,25.96" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="get_FailedLoginAttemptsBeforeBan" />
+    <Node Id="(@1 @2 Type=IPBlockCount Member=.ctor)" Category="CodeSchema_Method" Bounds="253.8752266764,463.704404575324,106.343333333333,25.96" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="IPBlockCount" />
+    <Node Id="@11" Category="CodeSchema_Method" Bounds="447.175446474465,407.744404575324,128.353333333333,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="ProcessIPAddress" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="ProcessIPAddress" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=259 StartCharacterOffset=0 EndLineNumber=259 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@12" Category="CodeSchema_Method" Bounds="459.308080814197,631.584404575324,90.4966666666667,25.96" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="get_Count" />
+    <Node Id="@13" Category="CodeSchema_Method" Bounds="102.321893343069,463.704404575324,121.553333333333,25.96" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="IncrementCount" />
+    <Node Id="@14" Category="CodeSchema_Method" Bounds="455.165909378419,16.0244045753238,79.4866666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="Initialize" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="Initialize" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=472 StartCharacterOffset=0 EndLineNumber=472 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@15" Category="CodeSchema_Method" Bounds="636.824732728013,234.92752843291,169.24,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="RunFreeswitchLogReader" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="RunFreeswitchLogReader" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=488 StartCharacterOffset=0 EndLineNumber=488 EndCharacterOffset=0)" UseManualLocation="True">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@16" Category="CodeSchema_Method" Bounds="431.677282646254,-39.9355954246763,109.996666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="ServiceThread" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="ServiceThread" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=616 StartCharacterOffset=0 EndLineNumber=616 EndCharacterOffset=0)" UseManualLocation="True">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@17" Category="CodeSchema_Method" Bounds="287.941399394679,127.944404575324,147.176666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="SetupLegacyWatcher" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="SetupLegacyWatcher" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=345 StartCharacterOffset=8 EndLineNumber=345 EndCharacterOffset=8)" />
+    <Node Id="@18" Category="CodeSchema_Method" Bounds="380.126954961643,71.9844045753237,110.726666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="SetupWatcher" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="SetupWatcher" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=401 StartCharacterOffset=8 EndLineNumber=401 EndCharacterOffset=8)" />
+    <Node Id="@5" Category="CodeSchema_Method" Bounds="405.68882047637,351.784404575324,96.25,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="ProcessXml" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="ProcessXml" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=328 StartCharacterOffset=0 EndLineNumber=328 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_Method" Bounds="256.961399394679,239.864404575324,178.156666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="EventRecordWrittenLegacy" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="EventRecordWrittenLegacy" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=353 StartCharacterOffset=8 EndLineNumber=353 EndCharacterOffset=8)" />
+    <Node Id="@9" Category="CodeSchema_Method" Bounds="465.118066061346,183.904404575324,141.706666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="EventRecordWritten" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Метод" Label="EventRecordWritten" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/IPBanService.cs&quot; StartLineNumber=331 StartCharacterOffset=8 EndLineNumber=331 EndCharacterOffset=8)" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 @2 @3 Member=(Name=OnStart OverloadingParameters=[(@4 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Target="@16" Category="CodeSchema_FunctionPointer" Bounds="481.596324374525,-69.9357917358399,2.48909354948256,21.062296132317" Weight="1" />
+    <Link Source="(@1 @2 @3 Member=(Name=RunConsole OverloadingParameters=[(@4 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Target="@15" Category="CodeSchema_Calls" Bounds="728.95205568156,-2.23991729736328,79.9364449339023,228.67158212186" Weight="1" />
+    <Link Source="(@1 @2 @3 Member=RunTests)" Target="@5" Category="CodeSchema_Calls" Bounds="226.961399394679,317.508952696992,169.916889592988,35.3952554757431" Weight="10" />
+    <Link Source="@11" Target="(@1 @2 @3 Member=ExecuteBanScript)" Category="CodeSchema_Calls" Bounds="460.843956722662,433.704404575324,46.0298023184448,133.412146683548" Weight="1" />
+    <Link Source="@11" Target="(@1 @2 Type=IPBanConfig Member=(Name=IsBlackListed OverloadingParameters=[(@4 Namespace=System Type=String)]))" Category="CodeSchema_Calls" Bounds="521.402928131194,433.704404575324,61.0513137568263,78.8439597532259" Weight="2" />
+    <Link Source="@11" Target="(@1 @2 Type=IPBanConfig Member=(Name=IsWhiteListed OverloadingParameters=[(@4 Namespace=System Type=String)]))" Category="CodeSchema_Calls" Bounds="562.691023917063,433.704404575324,110.2654167769,27.8783692161064" Weight="1" />
+    <Link Source="@11" Target="(@1 @2 Type=IPBanConfig Member=get_FailedLoginAttemptsBeforeBan)" Category="CodeSchema_Calls" Bounds="575.52880859375,427.983123779297,322.472412109375,86.9849548339844" Weight="2" />
+    <Link Source="@11" Target="(@1 @2 Type=IPBlockCount Member=.ctor)" Category="CodeSchema_Calls" Bounds="363.116050350788,433.704404575324,100.847182286789,27.6224382634309" Weight="1" />
+    <Link Source="@11" Target="@12" Category="CodeSchema_Calls" Bounds="511.975860595703,433.704406738281,5.32369995117188,189.178771972656" Weight="6" />
+    <Link Source="@11" Target="@13" Category="CodeSchema_Calls" Bounds="232.761237275916,431.033878025419,214.432356209939,34.4566036602094" Weight="1" />
+    <Link Source="@13" Target="@12" Category="CodeSchema_Calls" Bounds="183.956069946289,489.664398193359,267.251052856445,140.822113037109" Weight="1" />
+    <Link Source="@14" Target="@15" Category="CodeSchema_Calls" Bounds="508.341808719006,41.9844045753237,193.198303704668,186.689124083395" Weight="1">
+      <Category Ref="CallStackDirectCall" />
+    </Link>
+    <Link Source="@14" Target="@18" Category="CodeSchema_Calls" Bounds="455.824400754948,41.9844045753237,25.3025326585594,23.8295968259787" Weight="1" />
+    <Link Source="@15" Target="@11" Category="CodeSchema_Calls" Bounds="534.082462098815,260.88752843291,171.582548977532,141.13946588489" Weight="1" />
+    <Link Source="@16" Target="@14" Category="CodeSchema_Calls" Bounds="488.585414863004,-13.9756917358398,3.10393709944867,21.0959643718723" Weight="1">
+      <Category Ref="CallStackDirectCall" />
+    </Link>
+    <Link Source="@17" Target="@7" Category="CodeSchema_FunctionPointer" Bounds="349.070056759649,153.904404575324,10.663212422974,77.0449796242253" Weight="1" />
+    <Link Source="@18" Target="@17" Category="CodeSchema_Calls" Bounds="385.862118082371,97.9444045753237,32.472916258724,24.569642289841" Weight="1" />
+    <Link Source="@18" Target="@9" Category="CodeSchema_FunctionPointer" Bounds="447.143655182701,97.9444045753237,71.1618611875638,79.263011892945" Weight="1" />
+    <Link Source="@5" Target="@11" Category="CodeSchema_Calls" Bounds="467.159907659869,377.744404575324,24.3942846191401,23.7251420587094" Weight="1">
+      <Category Ref="CallStackDirectCall" />
+    </Link>
+    <Link Source="@7" Target="@5" Category="CodeSchema_Calls" Bounds="358.538907665233,265.824404575324,76.5329845421549,79.4770970361434" Weight="1" />
+    <Link Source="@9" Target="@5" Category="CodeSchema_Calls" Bounds="464.122121952205,209.864404575324,65.4970891272518,133.836116733869" Weight="1" />
+  </Links>
+  <Categories>
+    <Category Id="CallStackDirectCall" Label="Прямой вызов стека вызовов" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Прямой вызов стека вызовов" OutgoingActionLabel="Прямой вызов стека вызовов" />
+    <Category Id="CallStackEntry" Label="Запись стека вызовов" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Запись стека вызовов" />
+    <Category Id="CodeSchema_Calls" Label="Вызовы" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Вызывается" OutgoingActionLabel="Вызовы" />
+    <Category Id="CodeSchema_FunctionPointer" Label="Указатель функции" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Указатели функций" OutgoingActionLabel="Указатели функций" />
+    <Category Id="CodeSchema_Member" Label="Член" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Члены" />
+    <Category Id="CodeSchema_Method" Label="Метод" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Методы" />
+    <Category Id="CodeSchema_SourceLocation" Label="Расположение исходного кода" Icon="File" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsCompilerGenerated" Label="Создан компилятором" Description="Флаг, указывающий, что представляющий этот узел код создан компилятором" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="Является конструктором" Description="Флаг, указывающий, что метод является конструктором" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Является Private" Description="Флаг, указывающий на область видимости Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsProtected" Label="Является Protected" Description="Флаг, указывающий на область видимости Protected" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Является Public" Description="Флаг, указывающий на область видимости Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsSpecialName" Label="Является особым именем" Description="Флаг, указывающий, что некоторые компиляторы обрабатывают этот метод особым образом" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsStatic" Label="Является статическим" Description="Флаг, указывающий, что член является статическим" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Виртуализированные данные" Description="При значении true граф может содержать узлы и связи, которые представляют данные для виртуализированных узлов и связей (то есть которые не были фактически созданы в графе)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Состояние отложенных связей между группами" Description="Unspecified, если не указано состояние отложенных связей между группами. NotFetched, если отложенные связи между группами в данном узле еще не переданы в граф. Fetched, если все отложенные связи между группами уже переданы." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FunctionTypeFlags" Label="FunctionTypeFlags" Description="FunctionTypeFlags" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Значок" Description="Значок" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsOverloaded" Label="IsOverloaded" Description="IsOverloaded" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="Language" Label="Язык" Description="Язык" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Номер начальной строки" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Толщина" Description="Толщина" DataType="System.Double" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ArrayRank" Label="Ранг массива" ValueType="System.String" />
+    <Name Id="Assembly" Label="Сборка" ValueType="Uri" />
+    <Name Id="Member" Label="Член" ValueType="System.Object" />
+    <Name Id="Name" Label="Имя" ValueType="System.String" />
+    <Name Id="Namespace" Label="Пространство имен" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Параметр" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParentType" Label="Родительский тип" ValueType="System.Object" />
+    <Name Id="Type" Label="Тип" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(73cf06bb-f7d2-464e-be9a-f94e2f4dc5d0.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=IPBan" />
+    <Alias n="3" Id="Type=IPBanService" />
+    <Alias n="4" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll" />
+    <Alias n="5" Id="(@1 @2 @3 Member=(Name=ProcessXml OverloadingParameters=[(@4 Namespace=System Type=String)]))" />
+    <Alias n="6" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Management.dll" />
+    <Alias n="7" Id="(@1 @2 @3 Member=(Name=EventRecordWrittenLegacy OverloadingParameters=[(@4 Namespace=System Type=Object),(@6 Namespace=System.Management Type=EventArrivedEventArgs)]))" />
+    <Alias n="8" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Core.dll" />
+    <Alias n="9" Id="(@1 @2 @3 Member=(Name=EventRecordWritten OverloadingParameters=[(@4 Namespace=System Type=Object),(@8 Namespace=System.Diagnostics.Eventing.Reader Type=EventRecordWrittenEventArgs)]))" />
+    <Alias n="10" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Xml.dll" />
+    <Alias n="11" Id="(@1 @2 @3 Member=(Name=ProcessIPAddress OverloadingParameters=[(@4 Namespace=System Type=String),(@10 Namespace=System.Xml Type=XmlDocument)]))" />
+    <Alias n="12" Id="(@1 @2 Type=IPBlockCount Member=get_Count)" />
+    <Alias n="13" Id="(@1 @2 Type=IPBlockCount Member=IncrementCount)" />
+    <Alias n="14" Id="(@1 @2 @3 Member=Initialize)" />
+    <Alias n="15" Id="(@1 @2 @3 Member=RunFreeswitchLogReader)" />
+    <Alias n="16" Id="(@1 @2 @3 Member=ServiceThread)" />
+    <Alias n="17" Id="(@1 @2 @3 Member=SetupLegacyWatcher)" />
+    <Alias n="18" Id="(@1 @2 @3 Member=SetupWatcher)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CurrentCallStackCall')" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+      <Setter Property="Weight" Value="1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Indirect Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackIndirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+      <Setter Property="StrokeDashArray" Value="4 1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Direct Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackDirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External And Current" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('ExternalCallStackEntry') And HasCategory('CurrentCallStackEntry')" />
+      <Setter Property="Background" Value="#FFFFF8F0" />
+      <Setter Property="Stroke" Value="#FFCE5100" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Текущий узел стека вызовов" ValueLabel="Да">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFFFE3C6" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Запись внешнего стека вызовов" ValueLabel="Да">
+      <Condition Expression="HasCategory('ExternalCallStackEntry')" />
+      <Setter Property="Background" Value="#FFF7F7F7" />
+      <Setter Property="StrokeDashArray" Value="1 3" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FFA5A5A5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Результаты" ValueLabel="Да">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Сборка" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Пространство имен" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Интерфейс" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Структура" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Перечисление" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Делегат" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Класс" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Свойство" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Метод" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Событие" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Поле" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="True">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Внешние" ValueLabel="Имеет категорию">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="Да" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="Да" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="Да" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="Да" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="Да" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="73cf06bb-f7d2-464e-be9a-f94e2f4dc5d0.OutputPath" Value="C:\Users\admin\Documents\Visual Studio 2013\Projects\Windows-IP-Ban-Service\bin\Debug\IPBan.exe" />
+    <Path Id="73cf06bb-f7d2-464e-be9a-f94e2f4dc5d0.OutputPathUri" Value="file:///C:/Users/admin/Documents/Visual Studio 2013/Projects/Windows-IP-Ban-Service/bin/Debug/IPBan.exe" />
+    <Path Id="FxReferenceAssemblies" Value="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>
